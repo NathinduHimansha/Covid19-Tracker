@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.app__container {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f5f6fa;
+  padding: 20px;
+}
+
+.app__dropdown__select {
+  width: 200px;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header_hedaing {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__header_hedaing > span {
+  text-align: right;
+  font-style: italic;
+  color: gray;
+}
+.app__header__heading__red {
+  color: #ce0707;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.7;
+}
+
+.app__right {
+  margin-left: 20px;
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+.app__right .MuiCardContent-rrot {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app__graph {
+  flex-grow: 1;
+}
+
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+@media (max-width: 990px) {
+  .app {
+    padding: 10px;
+  }
+
+  .app__container {
+    flex-direction: column;
+    font-size: 10px;
+  }
+
+  .app__header_hedaing > span {
+    text-align: left;
+  }
+
+  .app__right {
+    margin-left: 0px;
+  }
+}
+
+.app_footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100 !important;
+}

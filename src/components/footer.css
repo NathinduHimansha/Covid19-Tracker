@@ -1,0 +1,19 @@
+.footer__bar {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background-color: rgb(89, 89, 89);
+  color: white;
+}
+
+.footer__bar > span > a {
+  text-decoration: none;
+  color: white;
+  z-index: 100 !important;
+}
+
+@media (max-width: 990px) {
+  .footer__bar {
+    font-size: 11px;
+  }
+}
